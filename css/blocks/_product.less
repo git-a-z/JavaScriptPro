@@ -1,0 +1,123 @@
+/* Product */
+/* product-view */
+
+.product-view {
+    height: 777px;
+    background: #F7F7F7;
+    .display-flex-justify-between-align-center();
+}
+
+.product-arrow {
+    width: 47px;
+    height: 47px;
+    background: rgba(42, 42, 42, 0.15);
+    .display-flex-justify-center-align-center();
+}
+
+.product-arrow-img {
+    fill: black;
+}
+
+.product-arrow:hover .product-arrow-img {
+    fill: @color-main;
+}
+
+/* product-card */
+
+.product-card {
+    height: 601px;
+    border: 1px solid #EAEAEA;
+    margin-top: -65px;
+    background: @color-light;
+    position: relative;
+    .display-flex-justify-center-align-center();
+    flex-direction: column;
+}
+
+.product-card-block {
+    .display-flex-align-items-center();
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40%;
+}
+
+.product-card-heading {
+    .display-flex-justify-between-align-center();
+    flex-direction: column;
+    height: 66px;
+}
+
+.product-card-collection {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: @color-main;
+}
+
+.product-card-short-line {
+    width: 63px;
+    height: 3px;
+    background: #EF5B70;
+}
+
+.product-card-title {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+}
+
+.product-card-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+    width: 550px;
+    height: 51.5px;
+}
+
+.product-card-price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+}
+
+.product-card-long-line {
+    width: 641px;
+    height: 1px;
+    background: #EAEAEA;
+}
+
+.addToCart {
+    width: 211px;
+    height: 47.5px;
+    outline: 2px solid #FF6A6A;
+    .display-flex-align-items-center();
+    text-decoration: none;
+}
+
+.addToCart:hover {
+    background: #F26376;
+}
+
+.addToCart:hover > span {
+    color: white;
+}
+
+.addToCart:hover > svg {
+    fill: white;
+}
+
+.addToCart-img {
+    width: 33%;
+    fill: #EF5B70;
+}
+
+.addToCart-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    width: 67%;
+}
