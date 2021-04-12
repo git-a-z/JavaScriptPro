@@ -1,0 +1,704 @@
+@width-all: 1140px;
+@width-phone: 355px;
+@color-main: #F16D7F;
+@color-text: #222222;
+@color-light: #FFFFFF;
+
+.display-flex-justify-between-align-center() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.display-flex-justify-center-align-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-flex-wrap-justify-between-align-between() {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.display-flex-justify-between() {
+    display: flex;
+    justify-content: space-between;
+}
+
+.display-flex-align-items-center() {
+    display: flex;
+    align-items: center;
+}
+
+.display-flex-column() {
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Lato;
+    min-height: 100vh;
+    .display-flex-column();
+}
+
+main {
+    flex-grow: 1;
+}
+
+.wrap {
+    max-width: @width-all;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+@import "blocks/_index";
+@import "blocks/_catalog";
+@import "blocks/_product";
+@import "blocks/_cart";
+@import "blocks/_registration";
+@import "blocks/_menu";
+@import "blocks/_filters";
+
+@media (max-width: 1160px) {
+    .wrap {
+        padding: 0 16px;
+    }
+
+    .promo-part2 {
+        width: 45vw;
+    }
+
+    .promo-heading {
+        margin-left: 5vw;
+        width: 40vw;
+        font-size: 43px;
+        line-height: 48px;
+    }
+
+    .promo-heading1,
+    .promo-heading2 {
+        font-size: 23px;
+        line-height: 29px;
+    }
+
+    .promo-part-img {
+        height: 48vw;
+    }
+
+    .categories {
+        margin-top: 20px;
+        height: 40vw;
+    }
+
+    .cat-link {
+        width: 31.5%;
+        height: 22vw;
+    }
+
+    .cat-link-long {
+        width: 100%;
+        height: 15vw;
+    }
+
+    .cat-block {
+        width: 100%;
+        height: 22vw;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .cat-block-long {
+        width: 100%;
+        height: 15vw;
+    }
+
+    .featured {
+        margin-top: 155px;
+    }
+
+    .items {
+        padding: 0 6px;
+        margin-top: 74px;
+        height: 231vw;
+        max-height: 1775px;
+        justify-content: space-around;
+    }
+
+    .item-link {
+        margin: 0 10px;
+    }
+
+    .items-catalog {
+        padding: 0 6px;
+        margin-top: 40px;
+        height: 309vw;
+        max-height: 2372px;
+        justify-content: space-around;
+    }
+
+    .items-catalog > .item-link:nth-child(4) {
+        display: none;
+    }
+
+    .items-product {
+        height: 581px;
+        flex-direction: row-reverse;
+        margin-top: 128px;
+    }
+
+    .items-product > .item-link:last-child {
+        display: none;
+    }
+
+    .browse-all {
+        margin-top: 33px;
+        padding: 0px;
+    }
+
+    .delivery {
+        margin-top: 65px;
+        height: 80vw;
+        max-height: 610px;
+    }
+
+    .delivery-items {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    .delivery-link {
+        margin: 0 auto;
+    }
+
+    .subscribe {
+        height: 90vw;
+        max-height: 693px;
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)), url(../img/subscribe-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .subscribe-items {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    .subscribe-link {
+        width: 100%;
+        height: 35%;
+        margin: 0 auto;
+    }
+
+    .subscribe-link2 {
+        margin-bottom: 50px;
+    }
+
+    .filters {
+        margin-top: 11px;
+    }
+
+    .filter-wrap {
+        justify-content: space-between;
+    }
+
+    .paginator-box {
+        margin-top: 40.5px;
+    }
+
+    .product-view {
+        height: 81vw;
+        max-height: 777px;
+    }
+
+    .product-img {
+        height: 71vw;
+        max-height: 724px;
+    }
+
+    .cart {
+        flex-direction: column;
+        width: 100%;
+        height: 1118px;
+        margin-top: 59px;
+    }
+
+    .cart-block {
+        .display-flex-justify-between();
+        flex-direction: column;
+        height: 652px;
+    }
+
+    .cart-block-products {
+        .display-flex-justify-between-align-center();
+        width: 100%;
+    }
+
+    .cart-product {
+        width: 734px;
+        height: 306px;
+    }
+
+    .cart-product-link {
+        height: 100%;
+    }
+
+    .cart-product-text {
+        width: 100%;
+        margin-right: 24px;
+    }
+
+    .cart-product-title-block {
+        width: 100%;
+    }
+
+    .cart-block-adress-sum {
+        width: 100%;
+        height: 289px;
+        display: flex;
+        flex-direction: row;
+        order: 3;
+        margin-top: 64px;
+    }
+
+    .cart-adress,
+    .cart-sum {
+        height: 100%;
+        width: 360px;
+    }
+
+    .cart-block-buttons {
+        margin-top: 62px;
+        width: 100%;
+        .display-flex-justify-center-align-center();
+    }
+
+    .cart-block-button {
+        margin: 0 auto;
+    }
+
+    .registration {
+        margin-top: 40px;
+    }
+
+    .perks {
+        width: 46vw;
+        max-width: @width-all - 360px;
+        min-width: @width-phone;
+        margin-left: 22.5px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .perks-text {
+        width: 46vw;
+        max-width: 652px;
+        min-width: @width-phone;
+    }
+}
+
+@media (max-width: 800px) {
+    .items {
+        padding: 0 16px;
+    }
+
+    .item-link {
+        margin: 0 0px;
+    }
+}
+
+@media (max-width: 787px) {
+
+    .header-link-reg,
+    .header-link-basket {
+        display: none;
+    }
+
+    .promo1 {
+        display: none;
+    }
+
+    .promo2 {
+        width: 100%;
+        height: 97vw;
+    }
+
+    .promo-heading {
+        margin-left: 15vw;
+        width: 72vw;
+        height: 18vw;
+        font-size: 10vw;
+        line-height: 9vw;
+    }
+
+    .promo-heading1,
+    .promo-heading2 {
+        font-size: 5vw;
+        line-height: 6.5vw;
+    }
+
+    .categories {
+        padding: 0px;
+        margin-top: 64px;
+        height: 254vw;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .cat-link {
+        width: 91.5%;
+        height: 66vw;
+    }
+
+    .cat-link-long {
+        width: 91.5%;
+        height: 30vw;
+    }
+
+    .cat-block {
+        width: 100%;
+        height: 66vw;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .cat-block-long {
+        background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/cat4-phone.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 30vw;
+    }
+
+    .featured {
+        margin-top: 64px;
+    }
+
+    .items {
+        padding: 0 8px;
+        margin-top: 64px;
+        height: 950vw;
+        max-height: 3560px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .browse-all {
+        margin-top: 41px;
+    }
+
+    .delivery {
+        margin-top: 96.5px;
+        height: 163vw;
+        max-height: 610px;
+    }
+
+    .delivery-link {
+        width: 100%;
+        height: 130px;
+    }
+
+    .subscribe {
+        height: 147vw;
+        max-height: 550px;
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)), url(../img/subscribe-phone.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .subscribe-items {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    .subscribe-link {
+        width: 100%;
+        height: 35%;
+        margin: 0 auto;
+    }
+
+    .subscribe-link2 {
+        margin-bottom: 50px;
+    }
+
+    .subscribe-for {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .footer-items {
+        height: 143px;
+        flex-direction: column-reverse;
+    }
+
+    .footer-item-social {
+        margin-top: 43px;
+    }
+
+    .footer-item-rights {
+        margin-bottom: 9px;
+    }
+
+    .new-arrivals-wrap {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .new-arrivals-block {
+        margin-top: 24px;
+    }
+
+    .new-arrivals-link-block {
+        margin-bottom: 48px;
+    }
+
+    .filter-title-left {
+        display: none;
+    }
+
+    .filter-title-svg {
+        transform: scale(2.5);
+        margin-left: 8px;
+    }
+
+    .filter-block-left {
+        width: 15vw;
+    }
+
+    .filter-block-right {
+        width: 75vw;
+        max-width: 360px;
+        margin-left: 0;
+    }
+
+    .filter-block-right-single {
+        padding-right: 0px;
+    }
+
+    .filter-block-right-single[open] {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .filter-link {
+        margin-right: 10px;
+    }
+
+    .filter-summary {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .items-catalog {
+        margin-top: 32px;
+        height: 1269vw;
+        max-height: 4760px;
+    }
+
+    .delivery-catalog {
+        margin-top: 64.5px;
+    }
+
+    .product-view {
+        height: 624px;
+        position: relative;
+    }
+
+    .product-arrow {
+        position: absolute;
+    }
+
+    .product-arrow-left {
+        left: 0;
+    }
+
+    .product-arrow-right {
+        right: 0;
+    }
+
+    .product-img {
+        height: 114vw;
+        max-height: 565px;
+        margin: 0 auto;
+    }
+
+    .product-card-text {
+        width: 87vw;
+        max-width: 550px;
+        height: 28vw;
+        max-height: 105px;
+        .display-flex-justify-between-align-center();
+    }
+
+    .product-card-long-line {
+        width: 47vw;
+        max-width: 641px;
+    }
+
+    .items-product {
+        height: 1170px;
+        flex-direction: column;
+        margin-top: 64px;
+    }
+
+    .items-product > .item-link:last-child {
+        display: flex;
+    }
+
+    .items-product > .item-link:nth-child(3) {
+        display: none;
+    }
+
+    .filter-block-product {
+        width: 92vw;
+        max-width: 445px;
+        .display-flex-justify-between-align-center();
+    }
+
+    .filter-link-product {
+        margin-right: 0;
+    }
+
+    .subscribe-product {
+        margin-top: 64px;
+    }
+
+    .cart {
+        margin-top: 39px;
+    }
+
+    .cart-block-products {
+        height: 408px;
+    }
+
+    .cart-product {
+        width: 358px;
+        height: 168px;
+    }
+
+    .cart-product-img {
+        width: 144px;
+    }
+
+    .cart-product-text {
+        width: 214px;
+        margin-right: 24px;
+    }
+
+    .cart-product-title-block {
+        width: 172px;
+        margin-top: 13.5px;
+        height: 36px;
+    }
+
+    .cart-product-cross {
+        transform: scale(0.5);
+    }
+
+    .cart-product-title {
+        font-size: 16px;
+        line-height: 19px;
+        width: 183px;
+    }
+
+    .cart-product-specs {
+        font-size: 14px;
+        line-height: 17px;
+        height: 76px;
+        margin-bottom: 38px;
+    }
+
+    .cart-product-quantity-value {
+        font-size: 10px;
+        line-height: 12px;
+        width: 24px;
+        height: 15px;
+    }
+
+    .cart-block-buttons {
+        margin-top: 30px;
+    }
+
+    .cart-block-button-text {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .cart-block-adress-sum {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 550px;
+        margin-top: 48px;
+    }
+
+    .cart-adress,
+    .cart-sum {
+        height: 214px;
+    }
+
+    .cart-block-button {
+        width: 165px;
+        height: 32px;
+    }
+
+    .subscribe-cart {
+        margin-top: 96px;
+    }
+
+    .registration {
+        flex-direction: column;
+        height: 872px;
+    }
+
+    .perks {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .item-link,
+    .item-image,
+    .subscribe-quote,
+    .subscribe-form,
+    .cart-product,
+    .cart-adress,
+    .cart-sum,
+    .regform,
+    .regform-input {
+        width: @width-phone;
+    }
+
+    .product-img {
+        width: 94vw;
+        height: auto;
+    }
+
+    .cart-product {
+        height: 168px;
+    }
+
+    .cart-block-button {
+        width: 160px;
+    }
+}
